@@ -1,7 +1,8 @@
-import { prisma } from "../../lib/prisma"
-import { transporter } from "../../utility/send.mail";
-import { IMessage } from "./message.interface"
+
 import * as crypto from "node:crypto";
+import { IMessage } from "./message.interface.js";
+import { prisma } from "../../lib/prisma.js";
+import { transporter } from "../../utility/send.mail.js";
 
 
 const massageIntoDB = async(payload: IMessage)=>{

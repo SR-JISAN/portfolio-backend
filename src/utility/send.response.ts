@@ -1,5 +1,6 @@
 import { Response } from "express";
-import { TResponse } from "./response.type";
+import { TResponse } from "./response.type.js";
+
 
 
 export const sendResponse = <T> (res: Response, data: TResponse<T>) => {

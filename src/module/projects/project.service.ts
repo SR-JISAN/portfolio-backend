@@ -1,5 +1,6 @@
-import { prisma } from "../../lib/prisma"
-import { IProject } from "./project.interface"
+import { prisma } from "../../lib/prisma.js";
+import { IProject } from "./project.interface.js";
+
 
 const postProjectInDB =async (payload:IProject)=>{
    const postProject = await prisma.projects.create({

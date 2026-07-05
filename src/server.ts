@@ -1,7 +1,8 @@
+import app from "./app.js";
+import config from "./config/index.js";
+import { prisma } from "./lib/prisma.js";
 
-import app from "./app";
-import config from "./config";
-import { prisma } from "./lib/prisma";
+
 
 
 const port = config.port;

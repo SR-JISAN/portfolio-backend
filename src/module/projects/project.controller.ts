@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { catchAsync } from "../../utility/catch.async";
-import { projectService } from "./project.service";
-import { sendResponse } from "../../utility/send.response";
 import httpStatus  from "http-status";
+import { catchAsync } from "../../utility/catch.async.js";
+import { projectService } from "./project.service.js";
+import { sendResponse } from "../../utility/send.response.js";
 
 const postProjectController = catchAsync(async (req: Request, res: Response)=>{
    const payload = req.body;

@@ -1,10 +1,10 @@
 import { Request, Response } from "express"
-import { catchAsync } from "../../utility/catch.async"
-import httpStatus from "http-status";
-import { messageService } from "./message.service";
-import { sendResponse } from "../../utility/send.response";
-import { prisma } from "../../lib/prisma";
+import httpStatus  from "http-status";
 import validator from "validator";
+import { catchAsync } from "../../utility/catch.async.js";
+import { messageService } from "./message.service.js";
+import { sendResponse } from "../../utility/send.response.js";
+import { prisma } from "../../lib/prisma.js";
 
 
 const message =catchAsync (async (req: Request, res : Response) => {
