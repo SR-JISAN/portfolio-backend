@@ -1,0 +1,12 @@
+model projects {
+    id String @id @default(uuid())
+    project_name String @db.VarChar(100)
+    description String
+    image String
+    techStack String[]
+    order Int @default(0)
+    live_Url String  
+    github_Url String
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+}

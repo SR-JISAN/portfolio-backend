@@ -1,0 +1,12 @@
+
+model message {
+    id        String     @id @default(uuid())
+    name      String     @db.VarChar(250)
+    email     String     @db.VarChar(250)
+    message   String     @db.VarChar(1000)
+    phone    String?     @db.VarChar(20)
+    verified          Boolean  @default(false)
+    verificationToken String?  @unique
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+}
